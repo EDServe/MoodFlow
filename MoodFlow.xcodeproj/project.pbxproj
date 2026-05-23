@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* MoodFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000101 /* MoodFlowApp.swift */; };
+		AA000002 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000102 /* MoodEntry.swift */; };
+		AA000003 /* MoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000103 /* MoodStore.swift */; };
+		AA000004 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000104 /* ContentView.swift */; };
+		AA000005 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000105 /* HomeView.swift */; };
+		AA000006 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000106 /* HistoryView.swift */; };
+		AA000007 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000107 /* InsightsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000101 /* MoodFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodFlowApp.swift; sourceTree = "<group>"; };
+		AA000102 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		AA000103 /* MoodStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodStore.swift; sourceTree = "<group>"; };
+		AA000104 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000105 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AA000106 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		AA000107 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		AA000108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA000200 /* MoodFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000700 = {
+			isa = PBXGroup;
+			children = (
+				AA000400 /* MoodFlow */,
+				AA000600 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA000400 /* MoodFlow */ = {
+			isa = PBXGroup;
+			children = (
+				AA000101 /* MoodFlowApp.swift */,
+				AA000108 /* Info.plist */,
+				AA000500 /* Models */,
+				AA000501 /* Store */,
+				AA000502 /* Views */,
+			);
+			path = MoodFlow;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA000500 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA000102 /* MoodEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA000501 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				AA000103 /* MoodStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		AA000502 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA000104 /* ContentView.swift */,
+				AA000105 /* HomeView.swift */,
+				AA000106 /* HistoryView.swift */,
+				AA000107 /* InsightsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA000600 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000200 /* MoodFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000800 /* MoodFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000900 /* Build configuration list for PBXNativeTarget "MoodFlow" */;
+			buildPhases = (
+				AA000300 /* Frameworks */,
+				AA000301 /* Sources */,
+				AA000302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodFlow;
+			productName = MoodFlow;
+			productReference = AA000200 /* MoodFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000A00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AA000800 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = AA000B00 /* Build configuration list for PBXProject "MoodFlow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000700;
+			productRefGroup = AA000600 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000800 /* MoodFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* MoodFlowApp.swift in Sources */,
+				AA000002 /* MoodEntry.swift in Sources */,
+				AA000003 /* MoodStore.swift in Sources */,
+				AA000004 /* ContentView.swift in Sources */,
+				AA000005 /* HomeView.swift in Sources */,
+				AA000006 /* HistoryView.swift in Sources */,
+				AA000007 /* InsightsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA000C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA000C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA000D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MoodFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moodflow.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA000D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MoodFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moodflow.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000900 /* Build configuration list for PBXNativeTarget "MoodFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000D00 /* Debug */,
+				AA000D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000B00 /* Build configuration list for PBXProject "MoodFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000C00 /* Debug */,
+				AA000C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA000A00 /* Project object */;
+}

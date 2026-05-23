@@ -1,0 +1,43 @@
+name: Build MoodFlow IPA
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Build (unsigned)
+        run: |
+          xcodebuild \
+            -project MoodFlow.xcodeproj \
+            -scheme MoodFlow \
+            -sdk iphoneos \
+            -configuration Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CONFIGURATION_BUILD_DIR=$PWD/build \
+            build
+
+      - name: Package as IPA
+        run: |
+          mkdir -p Payload
+          cp -r build/MoodFlow.app Payload/
+          zip -r MoodFlow.ipa Payload
+          rm -rf Payload
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: MoodFlow-unsigned
+          path: MoodFlow.ipa
+          retention-days: 30
